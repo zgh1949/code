@@ -1,15 +1,23 @@
+package algorithm;
+
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * @author zgh19
+ */
 public class AlgorithmArrays {
 
     public static void main(String[] args) {
+
+
+
         Item[] array = new Item[5];
         init(array);
         
         // Test
         System.out.println("The random item is " + randomAccess(array).name);
 
-        insert(array, 2, new Item(333, "Èý"));
+        insert(array, 2, new Item(333, "ä¸‰"));
         printArray(array);
 
         delete(array, 5);
